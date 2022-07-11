@@ -1,0 +1,197 @@
+body {
+    background-color: hsl(228, 12%, 48%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    width: 1200px;
+    height: 500px;
+    margin: 0;
+    border-radius: 10px;
+    padding-bottom: 75px;
+    
+    
+}
+.mainbody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    height: 300px;
+    
+    border-radius: 50px;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.prices {
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    align-items: center;
+}
+.prices :first-child {
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+    font-size: larger;
+    font-family: Fraunces;
+}
+.prices :nth-child(2) {
+    font-size: small;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-family: Fraunces;
+}
+
+.right_col {
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 9px;
+    padding-top: 15px;
+    padding-bottom: 15;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.right_col h2 {
+    text-transform: uppercase;
+    color: hsl(228, 12%, 48%);
+    font-weight: lighter;
+    font-size: small;
+    font-family: montserrat;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    
+    
+}
+.cart {
+    display:grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.cart button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    cursor: pointer;
+    font-family: montserrat;
+    font-weight: bolder;
+}
+button:hover {
+    transition: 1s;
+    background-color: hsl(228, 12%, 48%);
+}
+
+.nameproduct h1 {
+    line-height: 30px;
+    font-family: montserrat;
+    font-weight: 500, 700;
+}
+.nameproduct p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: montserrat;
+}
+
+@media (max-width: 375px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-items: center;
+        background-color: hsl(30, 38%, 92%);
+        width: 600px;
+        height: 1400px;
+       
+        border-radius: 10px;
+        padding-bottom: 75px;
+        
+        
+    }
+    .mainbody {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 1fr 1fr;
+        width: 400px;
+        height: 300px;
+        margin-left: 110px;
+        margin-bottom: 750px;
+        border-radius: 50px;
+        align-self: center;
+        justify-self: center;
+    }
+    .img {
+        width: 400px;
+        height: 300px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: -10px;
+    }
+    .right_col {
+        background-color: white;
+        padding-left: 25px;
+        padding-right: 9px;
+        padding-top: 15px;
+        padding-bottom: 15;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+    .right_col h2 {
+        text-transform: uppercase;
+        color: hsl(228, 12%, 48%);
+        font-weight: lighter;
+        font-size: small;
+        font-family: montserrat;
+        font-weight: 700;
+        letter-spacing: .3rem;
+        
+        
+    }
+    .cart {
+        display:grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .cart button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        border-radius: 8px;
+        background-color: hsl(158, 36%, 37%);
+        color: white;
+        cursor: pointer;
+        font-family: montserrat;
+        font-weight: bolder;
+    }
+    button:hover {
+        transition: 1s;
+        background-color: hsl(228, 12%, 48%);
+    }
+}
